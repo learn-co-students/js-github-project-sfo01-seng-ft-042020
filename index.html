@@ -4,7 +4,8 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
   <title>Document</title>
-  <script src='js/index.js'></script>
+  <script src='js/index.js' defer></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel='stylesheet' href='index.css'/>
 </head>
 <body>
@@ -13,16 +14,19 @@
     <h2>GitHub Search</h2>
 
     <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+      <div class='form-group'>
+        <input id='search' type='text' class='form-control' name='search'>
+      </div>
+      
+      <input type='submit' name='submit' class='btn btn-primary'/>
     </form>
 
     <div id='github-container'>
-      <ul id='user-list'>
+      <div id='user-list'>
 
-      </ul>
+      </div>
 
-      <ul id='repos-list'>
+      <ul id='repos-list' class="list-group">
 
       </ul>
     </div>
